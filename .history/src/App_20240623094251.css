@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+  z-index: -10;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 10;
+  /* rounded corners*/
+  border-radius: 100px;
+
+}
+
+#offcanvasNavbar{
+  position: fixed;
+  margin-top: 55px;
+}
+
+#sidebarButton {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto auto -30px 10px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 100%;
+  background-color: #007bff;
+}
+
+#closeButton, .btn-close {
+  color: white !important;
+  margin-left: 15px;
+}
+#aboutSec {
+  height: 75vh;
+}
+.offcanvas-body {
+ padding: 0 100px 0 100px;
+}
+#luna {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* HomePage Hero */
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white !important;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: url('https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+.hero-content
+.dropdown-item {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background-color: #007bff;
+}
+.dropdown-item:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+
+a.nav-link, a.nav-item {
+  color: white !important;
+}
+a.nav-link, a.nav-item {
+ padding: 20px 0 20px 0;
+}
+
+a.nav-link:hover, a.nav-item:hover {
+  color: #ffd000 !important;
+}
+a.active {
+  color: #007bff !important;
+}
+
+/* Shop */
+.shop {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white !important;
+  flex-direction: col !important;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-wrap: wrap;
+
+}
+#shopItem {
+  min-width: 400px;
+  margin: 0 auto;
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
